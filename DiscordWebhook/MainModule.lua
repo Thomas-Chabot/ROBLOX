@@ -41,7 +41,7 @@
 				-avatar_url (string): override the default avatar of the webhook
 				-TTS (bool): true if this is a TTS message
 				-embeds (dictionary): embeded content, this can optionally be created with the createEmbed function
-		Returns: If successful, returns results of the http request. If not it returns false.
+		Returns: Returns results of the http request.
 --]]
 
 
@@ -79,18 +79,13 @@ function webhook:createEmbed(data)
 end
 
 function webhook:execute(data)
-	if game.HttpService.HttpEnabled then
-		local sendData
-		local res = pcall(function()
-			data = Http:JSONEncode(data)
-		end)
-		assert(res, 'Failed to encode json.')
-		local result Http:PostAsync('https://discordapp.com/api/webhooks/' .. self.id .. '/' .. self.token, data)
-		return result
-	else
-		warn('Enable HttpService and try again')
-		return false
-	end
+	local sendData
+	local res = pcall(function()
+		data = Http:JSONEncode(data)
+	end)
+	assert(res, 'Failed to encode json.')
+	local result Http:PostAsync('https://discordapp.com/api/webhooks/' .. self.id .. '/' .. self.token, data)
+	return result
 end
 
 return webhook
