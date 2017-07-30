@@ -84,7 +84,7 @@ function webhook:execute(data)
 		data = Http:JSONEncode(data)
 	end)
 	assert(res, 'Failed to encode json.')
-	local result Http:PostAsync('https://discordapp.com/api/webhooks/' .. self.id .. '/' .. self.token, data)
+	local result = Http:PostAsync('https://discordapp.com/api/webhooks/' .. self.id .. '/' .. self.token, data)
 	return result
 end
 
