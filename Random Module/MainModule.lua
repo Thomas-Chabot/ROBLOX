@@ -15,7 +15,7 @@
 			-x (integer): First number.
 			-y (integer): Second number.
 			-amt (integer) [optional]: Amount of numbers to retrieve.
-		Returns: If you supplied an amt argument it returns a table of random numbers and a length of amt. If you did not it returns a single random
+		Returns: If you supplied an amt argument it returns a table of random numbers with a length of amt. If you did not it returns a single random
 				 number.
 				
 	getString:
@@ -23,8 +23,10 @@
 		Arguments:
 			-length (integer): Length of your string.
 			-caps (boolean) [optional]: Whether or not capital letters are allowed. Defaults to false.
-			-nums (boolean) [optional]: Whether or not numbers are allowed. Defautls to false.
+			-nums (boolean) [optional]: Whether or not numbers are allowed. Defaults to false.
 			-amt (integer) [optional]: Amount of strings to retrieve.
+		Returns: If you supplied an amt argument it returns a table of random strings with a length of amt. If you did not it returns a single
+			 number.
 --]]
 
 local random = {}
