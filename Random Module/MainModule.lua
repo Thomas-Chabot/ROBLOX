@@ -26,7 +26,7 @@
 			-nums (boolean) [optional]: Whether or not numbers are allowed. Defaults to false.
 			-amt (integer) [optional]: Amount of strings to retrieve.
 		Returns: If you supplied an amt argument it returns a table of random strings with a length of amt. If you did not it returns a single
-			 number.
+			 random string.
 --]]
 
 local random = {}
