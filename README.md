@@ -1,6 +1,4 @@
 # ROBLOX
-useful modules I made when I was bored
-
-most of these have already been made before
+Modules and scripts written by call23re2.
 
 todo: add twitter module
