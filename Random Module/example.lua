@@ -3,20 +3,20 @@ for i = 1, 50 do math.random()end
 
 local random = require(script.Parent)
 
-local newNum = random:getNumber(1, 10)
-local newNums = random:getNumber(1, 10, 3)
+local newNum = random.getNumber(1, 10)
+local newNums = random.getNumber(1, 10, 3)
 
-local newString = random:getString(10, true, true)
-local newStrings = random:getString(10, true, true, 3)
+local newString = random.getString(10, true, true)
+local newStrings = random.getString(10, true, true, 3)
 
-local newString2 = random:getString(10, true, false)
-local newStrings2 = random:getString(10, true, false, 3)
+local newString2 = random.getString(10, true, false)
+local newStrings2 = random.getString(10, true, false, 3)
 
-local newString3 = random:getString(10, false, true)
-local newStrings3 = random:getString(10, false, true, 3)
+local newString3 = random.getString(10, false, true)
+local newStrings3 = random.getString(10, false, true, 3)
 
-local newString4 = random:getString(10, false, false)
-local newStrings4 = random:getString(10, false, false, 3)
+local newString4 = random.getString(10, false, false)
+local newStrings4 = random.getString(10, false, false, 3)
 
 print('newNum', newNum)
 local n1 = ''
