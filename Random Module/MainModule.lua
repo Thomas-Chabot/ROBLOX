@@ -31,7 +31,7 @@
 
 local random = {}
 
-function random:getNumber(x, y, amt)
+function random.getNumber(x, y, amt)
 	if not amt or amt == 1 then
 		return math.random(x, y)
 	else
@@ -43,7 +43,7 @@ function random:getNumber(x, y, amt)
 	end
 end
 
-function random:getString(length, caps, numsBool, amt)
+function random.getString(length, caps, numsBool, amt)
 	local chars = {'q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m'}
 	local nums = {1,2,3,4,5,6,7,8,9}
 	
