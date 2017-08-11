@@ -3,7 +3,7 @@ local module = {
 	dec = {0,1,2,3,4,5,6,7,8,9,['A']=10,['B']=11,['C']=12,['D']=13,['E']=14,['F']=15}
 }
 
-function module:ToHex(dec)
+function module.ToHex(dec)
 	local function hexify(remainder)
 		if remainder > 9 then
 			return module.hex[remainder+1]
@@ -21,7 +21,7 @@ function module:ToHex(dec)
 	return string.sub(remainders,2,string.len(remainders))
 end
 
-function module:ToDec(hex)
+function module.ToDec(hex)
 	local function decify(char)
 		if not tonumber(char) then
 			return module.dec[char]
