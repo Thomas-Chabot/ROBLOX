@@ -9,12 +9,12 @@
 			-duration (integer): Duration of timer.
 		Returns: New timer object.
 		
-	Timer.Start:
+	Timer:Start:
 		Description: Starts your timer.
 		Arguments: None
 		Returns: Nothing
 		
-	Timer.Stop:
+	Timer:Stop:
 		Description: Stops your timer.
 		Arguments: None
 		Returns: Nothing
